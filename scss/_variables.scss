@@ -3,6 +3,9 @@
 // Gray and Brand Colors for use across theme
 
 $theme-primary: #bc23f2;
+$theme-dark: darken($theme-primary, 13.5%) !default;
+$theme-darker: darken($theme-primary, 25%) !default;
+$theme-lighter: lighten($theme-primary, 13.5%) !default;
 
 $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 13.5%) !default;
