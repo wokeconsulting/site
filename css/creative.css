@@ -273,6 +273,11 @@ header.masthead {
 #contact {
   background: linear-gradient(rgba(168, 24, 236, 0.75), rgba(99, 0, 168, 0.65)), url("../img/city.jpg") center left fixed;
   color: #fff; }
+  #contact #sendMessageButton {
+    width: 100%;
+    background: black;
+    color: #FFF;
+    border-radius: 5px; }
 
 footer {
   background: #000;

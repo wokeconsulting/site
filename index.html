@@ -235,16 +235,19 @@
           <div class="col-lg-8 text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="primary">
-            <p>Ready to re-engage your customers and maximize your sites performance? That's great! Send us a message below and we'll get back to you as soon as possible!</p>
+            <p>Ready to re-engage your customers and maximize your sites performance? That's great! Send us a message below and we'll get you set up.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+            <form id="contactForm" name="sentMessage" action="https://formspree.io/louis.emmarket@gmail.com"
+      method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New email from Woke Consulting site!" />
+              <input type="text" name="_gotcha" style="display:none" />
               <div class="row justify-content-center">
                 <div class="col-md-8">
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Email" required data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="email" type="email" name="_replyto" placeholder="Email" required data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -255,9 +258,8 @@
                   </div>
                 </div>
                 <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Send Message</button>
+                <div class="col-md-8 text-center">
+                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Send</button>
                 </div>
               </div>
             </form>
